@@ -1,0 +1,53 @@
+package com.example.klef.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity    
+public class Employee {
+
+    @Id
+  
+    private int id;
+
+    private String name;
+    private String dep;
+    private double salary;
+
+    public Employee() {
+        super();
+    }
+
+    @Override
+    public String toString() {
+        return "Employee [id=" + id + ", name=" + name + ", dep=" + dep + ", salary=" + salary + "]";
+    }
+
+    // Getters and setters
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getDep() {
+        return dep;
+    }
+    public void setDep(String dep) {
+        this.dep = dep;
+    }
+    public double getSalary() {
+        return salary;
+    }
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+}
