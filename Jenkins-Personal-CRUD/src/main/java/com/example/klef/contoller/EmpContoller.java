@@ -16,7 +16,7 @@ import com.example.klef.model.Employee;
 import com.example.klef.service.EmpSer;
 
 @RestController
-@RequestMapping("/emp")
+@RequestMapping("/emp/")
 @CrossOrigin(origins = "*")
 public class EmpContoller {
 	
